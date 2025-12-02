@@ -1,5 +1,6 @@
 *{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'W95FA', sans-serif;
+  font-weight: bold;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,8 +15,8 @@
 
 .sidebox{
   width: 190px;
-  border: 2px solid rgb(227, 209, 185);
-  background-color: rgb(236, 217, 189);
+  border: 2px solid rgb(145, 145, 145);
+  background-color: rgb(161, 161, 161);
   margin-top: 45px;
   text-align: center;
   font-size: 20px;
@@ -27,7 +28,7 @@
 
 .sec-container{
   flex: 1;
-  background-color: antiquewhite;
+  background-color: rgb(199, 199, 199);
   display: flex;
   flex-direction : column;
 }
@@ -39,7 +40,8 @@ header{
   font-size: 18px;
   font-weight : bold;
   color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 1px rgb(13, 100, 13);
+  text-shadow: 1px 1px 0px rgb(14, 75, 14);
+  
 }
 
 header{
@@ -47,10 +49,11 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(42, 104, 42);
+  background: rgb(59, 150, 109);
   box-shadow: 0px 2px 10px rgb(80, 80, 80);
   border-bottom: 1px solid;
   border-color: rgb(5, 72, 5);
+  letter-spacing: 2px;
 }
 
 section{
@@ -68,64 +71,75 @@ section{
   padding: 12px 16px;
   color: white;
   box-shadow: 0px 1px 8px rgb(45, 45, 45);
-
 }
-
 .message-bot{
   margin-left:50px;
   margin-bottom:55px;
   align-self: flex-end;
   border-radius: 20px 20px 20px 0px;
-  background-color: rgb(56, 130, 22);
+  background-color: rgb(36, 120, 82);
 }
 
 .message-user{
   align-self:flex-end;
   border-radius: 20px 20px 0 20px;
-  background-color:rgb(90, 169, 53);
+  background-color:rgb(54, 178, 122);
   margin-right: 50px;
+  text-align:end
 }
 
 footer{
   position: fixed;
-  background-color: antiquewhite;
-  border-top: 2px solid rgb(227, 209, 185);
-  box-shadow: 0px 0px 50px antiquewhite;
+  background-color: rgb(199, 199, 199);
+  border-top: 2px solid rgb(171, 170, 170);
+  box-shadow: 0px 0px 50px rgb(199, 199, 199);
   bottom:0px;
   display:flex;
   justify-content: center;
   padding:20px;
   width: auto;
   right:0;
-  left: 220px;
+  left: 190px;
   gap:10px;
 }
 
-footer textarea{
+#user-input{
   box-sizing: border-box;
-  border:1px solid rgb(145, 145, 145);
-  box-shadow: 0 1px 5px rgb(116, 116, 116);
+  border-top: 4px solid rgb(63, 63, 63);
+  border-left: 4px solid rgb(63, 63, 63);
+  border-bottom: 2px solid rgb(63, 63, 63);
+  border-right: 2px solid rgb(63, 63, 63);
+  background-color: rgb(244, 244, 244);
   flex: 19;
   resize:none;
   font-size:16.5px;
-  border-radius: 15px 15px 15px 15px;
   padding-top:17px;
   padding-left: 15px;
+
 }
 
-footer button{
+#send-question{
   padding: 3px 24px 4px 24px;
-  border:none;
-  border-radius: 15px 15px 15px 15px;
-  background-color: rgb(70, 123, 68);
+  border-top: 3px solid whitesmoke;
+  border-left: 3px solid whitesmoke;
+  border-bottom: 3px solid darkslategray;
+  border-right: 3px solid darkslategray;
+  background-color: rgb(36, 120, 82);
   opacity: 1;
-  transition: 0.1s;
   color : white;
   font-weight: bold;
   font-size: 20px;
   cursor:pointer;
 }
 
-footer button:hover{
-  opacity: 0.7;
+#send-question:hover{
+  opacity: 0.9;
+}
+
+#send-question:active{
+  background-color: rgb(38, 99, 72);
+  border-bottom: 3px solid whitesmoke;
+  border-right: 3px solid whitesmoke;
+  border-top: 3px solid darkslategray;
+  border-left: 3px solid darkslategray;
 }
