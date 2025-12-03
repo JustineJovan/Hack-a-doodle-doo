@@ -15,20 +15,20 @@
 
 .sidebox{
   width: 190px;
-  border: 2px solid rgb(145, 145, 145);
+  border: 3px solid rgb(145, 145, 145);
   background-color: rgb(161, 161, 161);
   margin-top: 45px;
   text-align: center;
   font-size: 20px;
   font-weight:bolder;
-  color:rgb(45, 45, 45);
+  color:rgb(228, 228, 228);
   line-height: 3;
+  text-shadow: 2px 2px 0px rgb(36, 36, 36);
 }
-
 
 .sec-container{
   flex: 1;
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(222, 222, 222);
   display: flex;
   flex-direction : column;
 }
@@ -40,7 +40,7 @@ header{
   font-size: 18px;
   font-weight : bold;
   color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 0px rgb(14, 75, 14);
+  text-shadow: 2px 2px 0px rgb(14, 75, 14);
   
 }
 
@@ -49,43 +49,68 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(59, 150, 109);
+  background: rgb(66, 147, 110);
   box-shadow: 0px 2px 10px rgb(80, 80, 80);
-  border-bottom: 1px solid;
-  border-color: rgb(5, 72, 5);
+  border-bottom: 3px solid rgb(211, 211, 211);
+  border-right: 3px solid rgb(129, 129, 129);
+  border-top: 3px solid darkslategray;
+  border-left: 3px solid darkslategray;
   letter-spacing: 2px;
 }
 
 section{
   overflow-y: auto;
-  /*border: 2px solid;*/
-  flex:8;
-  margin-top: 55px;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 98px;
-}
-.message-bot, .message-user{
   flex:1;
-  font-size: 16.5px;
-  padding: 12px 16px;
-  color: white;
-  box-shadow: 0px 1px 8px rgb(45, 45, 45);
-}
-.message-bot{
-  margin-left:50px;
-  margin-bottom:55px;
-  align-self: flex-end;
-  border-radius: 20px 20px 20px 0px;
-  background-color: rgb(36, 120, 82);
+  margin-top: 46px;
+  flex-direction: column;
+  margin-bottom: 98px;
+  display: flex;
+  gap: 10px;
+  border: 3px solid;
 }
 
 .message-user{
-  align-self:flex-end;
-  border-radius: 20px 20px 0 20px;
-  background-color:rgb(54, 178, 122);
-  margin-right: 50px;
-  text-align:end
+  border: 3px solid rgb(154, 154, 154);
+  width: 100%;
+}
+
+.message-user p{
+  border: 2px solid rgb(0, 0, 0);
+  word-break: break-word;
+  margin-left: auto;
+  max-width: 50%;
+  text-align: right;
+}
+/*DESIGN*/
+.message-user p{
+  background-color:rgb(41, 165, 116);
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: rgb(237, 237, 237);
+  text-shadow: 2px 2px 0px rgb(39, 39, 39);
+}
+
+.message-bot{
+  border: 3px solid rgb(154, 154, 154);
+  width: 100%;
+}
+
+.message-bot p{
+  border: 2px solid rgb(0, 0, 0);
+  word-break: break-word;
+  width: 50%;
+  text-align: left;
+  margin-right:calc(21em + 8px);
+}
+/*DESIGN*/
+.message-bot p{
+  background-color:rgb(65, 115, 93);
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: white;
+  text-shadow: 2px 2px 0px rgb(39, 39, 39);
 }
 
 footer{
@@ -115,7 +140,6 @@ footer{
   font-size:16.5px;
   padding-top:17px;
   padding-left: 15px;
-
 }
 
 #send-question{
